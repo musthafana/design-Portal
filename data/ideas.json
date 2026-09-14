@@ -1,0 +1,154 @@
+{
+  "screening": {
+    "title": "How income ideas are screened here",
+    "note": "These are general considerations, not a religious ruling. Scholars differ on edge cases, and anything genuinely borderline is worth asking a qualified scholar about — especially around client sectors and contract structure.",
+    "avoid": [
+      "Interest-based products and financing — designing sales material for interest-bearing loans, credit cards or conventional insurance, and funding your own business with an interest-bearing loan",
+      "Gambling, alcohol, pork, tobacco, adult content, and nightlife venues as clients",
+      "Deceptive marketing — charts that mislead, testimonials you invent, before/after claims you cannot evidence",
+      "Excessive uncertainty in a contract (gharar): vague scope, undefined deliverables, unpriced revisions"
+    ],
+    "prefer": [
+      "Fee for work done, agreed in writing before you start — scope, price, deliverables, revision count, delivery date",
+      "Sectors that are unambiguously clean: government, education, healthcare, infrastructure, energy, manufacturing, non-profits, publishing, halal consumer brands",
+      "Products you own and license honestly — templates, themes, courses, books",
+      "Profit-and-loss sharing partnerships rather than fixed-interest borrowing, if you ever take investment"
+    ],
+    "practical": [
+      "A written scope with a fixed price removes most of the uncertainty problem by itself, and it happens to be good business practice too",
+      "Keep a simple sector filter in your own pipeline notes, so you decide once rather than case by case under deadline pressure",
+      "Zakat applies to business cash and receivables once the year and threshold are met — track them separately from personal money"
+    ]
+  },
+  "income": [
+    { "id":"report-design-retainer", "name":"Annual and sustainability report design", "kind":"service",
+      "what":"Design of annual reports, ESG and sustainability reports for listed companies, government entities and large private groups.",
+      "whoPays":"Corporate communications, investor relations and sustainability teams.",
+      "howToStart":"Rebuild one public report you think is badly designed as a spec piece, show the before and after, and take it to three companies whose current report is worse. Reporting season is annual and predictable, so approach them four months ahead.",
+      "effort":"high","capital":"none","timeToFirstRevenue":"1–3 months",
+      "halalNote":"Clean in almost every sector. Check the client's core business — a conventional bank's annual report is a common grey area worth thinking through before you accept.",
+      "risk":"Long approval chains and heavy revision cycles. Price revisions explicitly." },
+
+    { "id":"powerbi-design-service", "name":"Dashboard design as a service", "kind":"service",
+      "what":"Taking working-but-ugly Power BI reports and rebuilding them so executives can actually read them — layout, hierarchy, colour, chart choice, theme files.",
+      "whoPays":"Analytics teams, BI consultancies, and finance functions who have a developer but no designer.",
+      "howToStart":"This is the rarest combination you own. Publish two teardown case studies — original, problems named, rebuild — and send them to BI consultancies rather than end clients. They resell you.",
+      "effort":"medium","capital":"none","timeToFirstRevenue":"2–6 weeks",
+      "halalNote":"Clean. Take care only if the underlying data serves a haram product line.",
+      "risk":"Clients may expect you to also build the data model. Decide where your scope ends and write it down." },
+
+    { "id":"bilingual-identity", "name":"Arabic–Latin bilingual brand systems", "kind":"service",
+      "what":"Identity systems that work properly in both scripts — matched type pairing, mirrored layouts, bilingual lock-ups and guidelines.",
+      "whoPays":"GCC government entities, cultural institutions, regional groups, and international brands entering the Gulf.",
+      "howToStart":"Most global studios do this badly and most local work is under-documented. Build a genuine specialism: study Khatt Foundation and regional foundries, then produce one exemplary bilingual guideline as a portfolio piece.",
+      "effort":"high","capital":"none","timeToFirstRevenue":"2–4 months",
+      "halalNote":"Clean.","risk":"Requires real Arabic typographic literacy. Do not fake it — partner with an Arabic type specialist at first." },
+
+    { "id":"presentation-systems", "name":"Executive presentation systems", "kind":"service",
+      "what":"Master template systems for consultancies, boards and executive teams — not one-off decks, but a governed slide library with rules.",
+      "whoPays":"Consultancies, PMOs, C-suite offices, investor relations.",
+      "howToStart":"Sell the system, not the deck. One template that survives 200 users is worth more than 20 decks, and it renews annually as the brand shifts.",
+      "effort":"medium","capital":"none","timeToFirstRevenue":"3–8 weeks",
+      "halalNote":"Clean. Watch for fundraising decks with misleading projections — you are responsible for what you help present.",
+      "risk":"Scope creep into endless deck production. Sell training and a rulebook so they can serve themselves." },
+
+    { "id":"templates-products", "name":"Template and asset products", "kind":"product",
+      "what":"InDesign report templates, Power BI theme files, chart component libraries, presentation systems, icon sets — sold repeatedly.",
+      "whoPays":"Other designers, small businesses, analysts.",
+      "howToStart":"Productise something you have already built for a client, stripped of their brand. Sell on your own site plus one marketplace. The first product teaches you the packaging; the fifth makes the money.",
+      "effort":"medium","capital":"low","timeToFirstRevenue":"1–3 months",
+      "halalNote":"Clean, provided the licence terms are clear and honest and the assets are genuinely yours.",
+      "risk":"Support burden and piracy. Price for the support, not the file." },
+
+    { "id":"teaching-cohort", "name":"Teaching — a cohort course of your own", "kind":"teaching",
+      "what":"A paid short course on the thing you can teach that few others can: designing dashboards and reports that executives read.",
+      "whoPays":"Analysts who cannot design, designers who cannot chart, and corporate L&D budgets.",
+      "howToStart":"Teach it free once inside your own organisation, record what confuses people, then run it as a paid four-week cohort. Corporate L&D pays far more than individuals.",
+      "effort":"high","capital":"low","timeToFirstRevenue":"2–4 months",
+      "halalNote":"Clean, and among the most rewarded forms of income in the tradition — beneficial knowledge that keeps giving.",
+      "risk":"Cohorts are demanding to run live. Start with one small cohort, not a launch." },
+
+    { "id":"corporate-training", "name":"In-house corporate training", "kind":"teaching",
+      "what":"Half-day and one-day workshops delivered on site: chart literacy for analysts, brand compliance for marketing teams, report standards for comms.",
+      "whoPays":"HR and L&D budgets, which are separate from project budgets and often easier to access.",
+      "howToStart":"Package three fixed workshops with fixed prices and outcomes. Sell to organisations you already have a relationship with — the first one is a referral, not a cold sale.",
+      "effort":"medium","capital":"none","timeToFirstRevenue":"1–2 months",
+      "halalNote":"Clean.","risk":"Travel and scheduling. Price a day rate, not an hourly one." },
+
+    { "id":"ai-production-studio", "name":"AI-accelerated production work", "kind":"service",
+      "what":"Volume creative production — campaign adaptations, localisation, image variants, motion cutdowns — delivered faster because you use AI tooling properly.",
+      "whoPays":"Agencies and in-house teams with more output than capacity.",
+      "howToStart":"Sell throughput and consistency, not novelty. Publish your process for keeping brand fidelity across generated assets. Disclose AI use in writing — clients increasingly require it.",
+      "effort":"medium","capital":"low","timeToFirstRevenue":"2–6 weeks",
+      "halalNote":"Clean in itself. Be honest about what is generated, respect other people's copyright, and refuse work that fabricates people or events.",
+      "risk":"Rates fall as tools spread. The durable part is your judgment and QC, so sell that." },
+
+    { "id":"book-design", "name":"Book and publication design", "kind":"service",
+      "what":"Interiors, covers, typesetting and print-ready files for publishers, institutions and serious self-publishers.",
+      "whoPays":"Regional publishers, universities, museums, foundations, authors.",
+      "howToStart":"Build a portfolio of interiors, not just covers — that is what separates a book designer from a graphic designer. Institutional publishers pay far better than individual authors.",
+      "effort":"medium","capital":"none","timeToFirstRevenue":"1–3 months",
+      "halalNote":"Clean. Screen content the same way you screen clients.",
+      "risk":"Individual authors have small budgets and large emotions. Prefer institutions." },
+
+    { "id":"wayfinding", "name":"Wayfinding and environmental graphics", "kind":"service",
+      "what":"Signage systems, donor walls, exhibition graphics and environmental branding for buildings and developments.",
+      "whoPays":"Developers, architects, facilities and cultural institutions — a large and continuous market in the Gulf.",
+      "howToStart":"Architects are the gatekeepers. One well-documented bilingual signage system opens the category. Learn the fabrication constraints before you pitch.",
+      "effort":"high","capital":"low","timeToFirstRevenue":"3–6 months",
+      "halalNote":"Clean.","risk":"Long project cycles, fabrication liability, site coordination. Contract carefully." },
+
+    { "id":"writing-income", "name":"Writing and documentation", "kind":"service",
+      "what":"Technical writing, brand guideline authorship, design system documentation and case-study writing — using the writing half of your skill set.",
+      "whoPays":"Companies with a design system nobody can follow, or a brand nobody understands.",
+      "howToStart":"Most guidelines fail because a designer wrote pictures and no sentences. You do both. Offer 'guideline rescue' as a fixed-price product.",
+      "effort":"low","capital":"none","timeToFirstRevenue":"2–4 weeks",
+      "halalNote":"Clean.","risk":"Underpriced if sold as 'writing'. Sell it as governance." }
+  ],
+  "ventures": [
+    { "id":"report-studio", "name":"A specialist report and disclosure studio", "stage":"side-business",
+      "thesis":"ESG and sustainability disclosure is becoming mandatory across more jurisdictions, and most of those documents are designed badly by generalists. A studio that does only reports, and knows the reporting frameworks, can charge like a consultancy.",
+      "firstMove":"Pick one framework, learn it properly, and become the designer who understands what the content has to contain — not just how it should look.",
+      "moat":"Framework literacy plus repeatable templates. Very few designers have both.",
+      "capital":"low","halalNote":"Clean, subject to normal client screening." },
+
+    { "id":"dashboard-design-firm", "name":"A dashboard design practice", "stage":"side-business",
+      "thesis":"Every organisation now has BI developers and no designer. The gap between a working report and a readable one is a service nobody is reliably selling.",
+      "firstMove":"Partner with two BI consultancies as their white-label design arm before you ever sell direct.",
+      "moat":"You sit between two professions that rarely overlap.","capital":"none","halalNote":"Clean." },
+
+    { "id":"template-business", "name":"A template and systems product business", "stage":"product",
+      "thesis":"One good report template or Power BI theme sold a thousand times outperforms a hundred bespoke jobs, and it earns while you sleep.",
+      "firstMove":"Ship one product. Measure whether anyone buys it before building a catalogue.",
+      "moat":"Craft quality and documentation — most templates on the market are visually weak and undocumented.",
+      "capital":"low","halalNote":"Clean, with honest licence terms." },
+
+    { "id":"gcc-design-publication", "name":"A regional design publication or newsletter", "stage":"media",
+      "thesis":"There is no strong, consistently published English-language design publication focused on GCC creative work. Attention in a defined niche converts into consulting, teaching and sponsorship.",
+      "firstMove":"Publish weekly for six months before monetising anything. The archive is the asset.",
+      "moat":"Consistency. Almost everyone quits before month four.",
+      "capital":"none","halalNote":"Clean; keep sponsorships clearly labelled and screen sponsors the same way you screen clients." },
+
+    { "id":"arabic-type-products", "name":"Bilingual type and brand tooling", "stage":"product",
+      "thesis":"Bilingual lock-ups, grids and guideline templates are re-invented badly on every Gulf project. A well-made toolkit would sell to studios across the region.",
+      "firstMove":"Build it for your own next bilingual project, then generalise it.",
+      "moat":"Genuine bilingual typographic competence is scarce.","capital":"low","halalNote":"Clean." },
+
+    { "id":"visual-standards-consultancy", "name":"Visual standards consulting", "stage":"consulting",
+      "thesis":"Large organisations produce thousands of documents a year with no visual standard. Setting that standard — and training people in it — is a governance service, priced like consulting rather than design.",
+      "firstMove":"Get IBCS certified, then sell an audit: take fifty of a client's existing reports and show what is inconsistent and what it costs them.",
+      "moat":"An audit is a diagnosis. Diagnoses lead to long engagements.","capital":"low","halalNote":"Clean." },
+
+    { "id":"course-business", "name":"A teaching business", "stage":"education",
+      "thesis":"You have a rare combination — design craft, data visualisation, technical writing. Very few people can teach all three, and corporate training budgets are large.",
+      "firstMove":"One recorded course, one live cohort, one corporate workshop. See which of the three earns most per hour of your time, then do more of it.",
+      "moat":"Practitioner credibility. You teach what you shipped last month.",
+      "capital":"low","halalNote":"Clean, and durable — teaching keeps returning long after the work is done." },
+
+    { "id":"studio-with-ai-throughput", "name":"A small studio built around AI throughput", "stage":"studio",
+      "thesis":"A two-or-three person studio using AI tooling well can now deliver what used to need eight people. The advantage is temporary but real, and it funds the next thing.",
+      "firstMove":"Do not announce it as an AI studio. Win on speed, price and consistency, and let clients notice.",
+      "moat":"Process and quality control, not the tools themselves.",
+      "capital":"low","halalNote":"Clean, with honest disclosure of AI use and respect for others' copyright." }
+  ]
+}

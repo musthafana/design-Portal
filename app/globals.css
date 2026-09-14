@@ -1,0 +1,97 @@
+/* Design Desk — global tokens. Palette A "Forest + Lime" (approved by MNA).
+   Canonical names match the palette sheet; --brass* are legacy aliases so
+   existing components keep working. Use the --accent* names in new code. */
+
+:root {
+  --ground: #0A0F0D;
+  --surface: #0E1A16;
+  --surface2: #12221C;
+  --surface3: #172B23;
+  --line: #1E3A30;
+  --line2: #2A5244;
+  --paper: #E8F0EC;
+  --paper2: #A4B8AE;
+  --muted: #637A70;
+
+  --accent: #C8E832;
+  --accent-dim: #8CA820;
+  --accent-wash: #171F06;
+  --alert: #E2754A;
+  --on-accent: #0A0F0D;
+
+  /* legacy aliases — do not add new uses */
+  --brass: var(--accent);
+  --brass-dim: var(--accent-dim);
+  --brass-wash: var(--accent-wash);
+  --ember: var(--alert);
+  --on-brass: var(--on-accent);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Font stacks are set via CSS variables injected by next/font */
+  font-family: var(--font-text, 'Archivo', -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: var(--ground);
+  color: var(--paper);
+  min-height: 100dvh;
+}
+
+/* Tabular numbers for any numeric column */
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reduced motion: collapse all durations to 1ms */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 180ms;
+}
+
+.view-transition-title {
+  view-transition-name: page-title;
+}
+
+button, a, input, select, textarea {
+  transition: all 0.2s ease;
+}
+
+button:active, a:active {
+  transform: scale(0.98);
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.view-transition-title {
+  view-transition-name: page-title;
+}

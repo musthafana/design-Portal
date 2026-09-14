@@ -1,0 +1,753 @@
+[
+ {
+  "id": "vignelli-canon",
+  "title": "The Vignelli Canon",
+  "author": "Massimo Vignelli",
+  "year": 2010,
+  "coverQuery": "The Vignelli Canon Massimo Vignelli",
+  "access": "free",
+  "freeUrl": "https://www.rit.edu/vignellicenter/sites/rit.edu.vignellicenter/files/documents/The%20Vignelli%20Canon.pdf",
+  "freeBasis": "PDF hosted by RIT's Vignelli Center for Design Studies, the designer's own institutional archive. Licence terms are not printed on the file — confirm before redistributing.",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 2,
+  "whyItMatters": "Seventy pages that contain most of what a corporate designer needs about discipline, grids and restraint. The fastest high-value read on this shelf.",
+  "citedBy": [
+   "vignelli",
+   "bierut",
+   "spiekermann"
+  ]
+ },
+ {
+  "id": "practical-typography",
+  "title": "Butterick's Practical Typography",
+  "author": "Matthew Butterick",
+  "coverQuery": "Butterick Practical Typography",
+  "access": "free",
+  "freeUrl": "https://practicaltypography.com/",
+  "freeBasis": "Published free on the author's own site, ungated, pay-what-you-wish.",
+  "category": "typography",
+  "level": "foundational",
+  "hours": 4,
+  "whyItMatters": "The rules that fix ninety percent of bad documents, written for people who set type in Word and InDesign rather than for type designers.",
+  "citedBy": [
+   "butterick"
+  ]
+ },
+ {
+  "id": "dataviz-fundamentals",
+  "title": "Fundamentals of Data Visualization",
+  "author": "Claus O. Wilke",
+  "year": 2019,
+  "coverQuery": "Fundamentals of Data Visualization Wilke",
+  "access": "free",
+  "freeUrl": "https://clauswilke.com/dataviz/",
+  "freeBasis": "Author manuscript published free under CC BY-NC-ND 4.0; a printed edition is sold separately.",
+  "category": "dataviz",
+  "level": "advanced",
+  "hours": 10,
+  "whyItMatters": "The single best reference on when a chart form is wrong and why. The colour chapters alone will change how you build dashboards.",
+  "citedBy": [
+   "wilke",
+   "cairo"
+  ]
+ },
+ {
+  "id": "web-style-guide",
+  "title": "Web Style Guide, 4th edition",
+  "author": "Patrick J. Lynch & Sarah Horton",
+  "year": 2016,
+  "coverQuery": "Web Style Guide Lynch Horton",
+  "access": "free",
+  "freeUrl": "https://www.webstyleguide.com/",
+  "freeBasis": "Full text published free under CC BY-NC-SA 4.0.",
+  "category": "editorial",
+  "level": "foundational",
+  "hours": 6,
+  "whyItMatters": "Structure, hierarchy and navigation stated plainly. Useful well beyond the web — the chapters on page architecture apply directly to report design.",
+  "citedBy": [
+   "lynch"
+  ]
+ },
+ {
+  "id": "elements-web",
+  "title": "The Elements of Typographic Style Applied to the Web",
+  "author": "Richard Rutter",
+  "coverQuery": "Elements of Typographic Style Applied to the Web Rutter",
+  "access": "free",
+  "freeUrl": "http://webtypography.net/",
+  "freeBasis": "Published free online by the author.",
+  "category": "typography",
+  "level": "advanced",
+  "hours": 5,
+  "whyItMatters": "Bringhurst's rules translated into things you can actually set. Read alongside the Bringhurst rather than instead of it.",
+  "citedBy": [
+   "rutter",
+   "bringhurst"
+  ]
+ },
+ {
+  "id": "shape-of-design",
+  "title": "The Shape of Design",
+  "author": "Frank Chimero",
+  "year": 2012,
+  "coverQuery": "The Shape of Design Frank Chimero",
+  "access": "free",
+  "freeUrl": "https://shapeofdesignbook.com/",
+  "freeBasis": "Full text published free under CC BY-NC-SA 3.0.",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 3,
+  "whyItMatters": "On craft, storytelling and why you make things. The book to read when the work has become process and you have forgotten the point.",
+  "citedBy": [
+   "chimero"
+  ]
+ },
+ {
+  "id": "resilient-web-design",
+  "title": "Resilient Web Design",
+  "author": "Jeremy Keith",
+  "year": 2016,
+  "coverQuery": "Resilient Web Design Jeremy Keith",
+  "access": "free",
+  "freeUrl": "https://resilientwebdesign.com/",
+  "freeBasis": "Web book published free under CC BY-SA 4.0.",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 3,
+  "whyItMatters": "A short history of a medium told as a design argument. Excellent structural model if you are building a talk.",
+  "citedBy": [
+   "keith"
+  ]
+ },
+ {
+  "id": "elements-typographic-style",
+  "title": "The Elements of Typographic Style",
+  "author": "Robert Bringhurst",
+  "year": 1992,
+  "coverQuery": "The Elements of Typographic Style Bringhurst",
+  "access": "buy",
+  "publisherUrl": "https://www.hartleyandmarks.com/",
+  "category": "typography",
+  "level": "advanced",
+  "hours": 16,
+  "whyItMatters": "The book every other typography book cites. Dense, occasionally severe, and the source of most rules you already follow without knowing where they came from.",
+  "citedBy": [
+   "bringhurst",
+   "spiekermann",
+   "lupton",
+   "rutter"
+  ]
+ },
+ {
+  "id": "grid-systems",
+  "title": "Grid Systems in Graphic Design",
+  "author": "Josef Müller-Brockmann",
+  "year": 1981,
+  "coverQuery": "Grid Systems in Graphic Design Muller-Brockmann",
+  "access": "buy",
+  "publisherUrl": "https://www.niggli.ch/",
+  "category": "grids",
+  "level": "foundational",
+  "hours": 8,
+  "whyItMatters": "The book that made the grid teachable. Every report template and dashboard layout you will build descends from these pages.",
+  "citedBy": [
+   "muller-brockmann",
+   "vignelli",
+   "bierut"
+  ]
+ },
+ {
+  "id": "thinking-with-type",
+  "title": "Thinking with Type",
+  "author": "Ellen Lupton",
+  "year": 2004,
+  "coverQuery": "Thinking with Type Ellen Lupton",
+  "access": "buy",
+  "publisherUrl": "https://papress.com/",
+  "category": "typography",
+  "level": "foundational",
+  "hours": 6,
+  "whyItMatters": "The clearest explanation of type anatomy, hierarchy and grids in print. Also a masterclass in how to teach a subject.",
+  "citedBy": [
+   "lupton"
+  ]
+ },
+ {
+  "id": "visual-display",
+  "title": "The Visual Display of Quantitative Information",
+  "author": "Edward R. Tufte",
+  "year": 1983,
+  "coverQuery": "The Visual Display of Quantitative Information Tufte",
+  "access": "buy",
+  "publisherUrl": "https://www.edwardtufte.com/",
+  "category": "dataviz",
+  "level": "foundational",
+  "hours": 8,
+  "whyItMatters": "Where data-ink, chartjunk and the small multiple come from. Argue with it, but know it — every reviewer of your dashboards has absorbed it second-hand.",
+  "citedBy": [
+   "tufte",
+   "cairo",
+   "few"
+  ]
+ },
+ {
+  "id": "envisioning-information",
+  "title": "Envisioning Information",
+  "author": "Edward R. Tufte",
+  "year": 1990,
+  "coverQuery": "Envisioning Information Tufte",
+  "access": "buy",
+  "publisherUrl": "https://www.edwardtufte.com/",
+  "category": "dataviz",
+  "level": "advanced",
+  "hours": 6,
+  "whyItMatters": "On escaping flatland — layering, separation, micro/macro reading. The most directly useful Tufte for technical and engineering graphics.",
+  "citedBy": [
+   "tufte"
+  ]
+ },
+ {
+  "id": "designing-design",
+  "title": "Designing Design",
+  "author": "Kenya Hara",
+  "year": 2007,
+  "coverQuery": "Designing Design Kenya Hara",
+  "access": "buy",
+  "publisherUrl": "https://www.lars-mueller-publishers.com/",
+  "category": "thinking",
+  "level": "advanced",
+  "hours": 10,
+  "whyItMatters": "Emptiness as a strategy rather than a style. The strongest counterweight to Western identity thinking on this shelf.",
+  "citedBy": [
+   "hara"
+  ]
+ },
+ {
+  "id": "thoughts-on-design",
+  "title": "Thoughts on Design",
+  "author": "Paul Rand",
+  "year": 1947,
+  "coverQuery": "Thoughts on Design Paul Rand",
+  "access": "buy",
+  "publisherUrl": "https://www.chroniclebooks.com/",
+  "category": "identity",
+  "level": "foundational",
+  "hours": 2,
+  "whyItMatters": "Corporate identity argued as an intellectual discipline. Short, and the model for how to write a rationale a client will accept.",
+  "citedBy": [
+   "rand"
+  ]
+ },
+ {
+  "id": "interaction-of-color",
+  "title": "Interaction of Color",
+  "author": "Josef Albers",
+  "year": 1963,
+  "coverQuery": "Interaction of Color Josef Albers",
+  "access": "buy",
+  "publisherUrl": "https://yalebooks.yale.edu/",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 6,
+  "whyItMatters": "Colour as relationship rather than value. Changes how you build a palette for a dashboard, permanently.",
+  "citedBy": [
+   "albers"
+  ]
+ },
+ {
+  "id": "design-as-art",
+  "title": "Design as Art",
+  "author": "Bruno Munari",
+  "year": 1966,
+  "coverQuery": "Design as Art Bruno Munari",
+  "access": "buy",
+  "publisherUrl": "https://www.penguin.co.uk/",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 4,
+  "whyItMatters": "Playful, short essays that reframe ordinary objects as design problems. The best book here for teaching material and talks.",
+  "citedBy": [
+   "munari"
+  ]
+ },
+ {
+  "id": "designing-brand-identity",
+  "title": "Designing Brand Identity",
+  "author": "Alina Wheeler",
+  "year": 2003,
+  "coverQuery": "Designing Brand Identity Alina Wheeler",
+  "access": "buy",
+  "publisherUrl": "https://www.wiley.com/",
+  "category": "identity",
+  "level": "foundational",
+  "hours": 10,
+  "whyItMatters": "The process manual — phases, deliverables, governance. Use it to structure a brand guideline project, not for inspiration.",
+  "citedBy": [
+   "wheeler"
+  ]
+ },
+ {
+  "id": "show-me-the-numbers",
+  "title": "Show Me the Numbers",
+  "author": "Stephen Few",
+  "year": 2004,
+  "coverQuery": "Show Me the Numbers Stephen Few",
+  "access": "buy",
+  "publisherUrl": "https://www.analyticspress.com/",
+  "category": "dataviz",
+  "level": "advanced",
+  "hours": 10,
+  "whyItMatters": "Table and graph design for business reporting, stated as rules you can apply the same afternoon. The most practical book for Power BI work.",
+  "citedBy": [
+   "few"
+  ]
+ },
+ {
+  "id": "storytelling-with-data",
+  "title": "Storytelling with Data",
+  "author": "Cole Nussbaumer Knaflic",
+  "year": 2015,
+  "coverQuery": "Storytelling with Data Knaflic",
+  "access": "buy",
+  "publisherUrl": "https://www.wiley.com/",
+  "category": "dataviz",
+  "level": "foundational",
+  "hours": 6,
+  "whyItMatters": "How to make an audience look where you want them to look. The pre-attentive attributes chapter is worth the price on its own.",
+  "citedBy": [
+   "knaflic"
+  ]
+ },
+ {
+  "id": "functional-art",
+  "title": "The Functional Art",
+  "author": "Alberto Cairo",
+  "year": 2012,
+  "coverQuery": "The Functional Art Alberto Cairo",
+  "access": "buy",
+  "publisherUrl": "https://www.peachpit.com/",
+  "category": "dataviz",
+  "level": "advanced",
+  "hours": 9,
+  "whyItMatters": "Bridges infographics and statistical graphics — the exact territory a corporate visual designer occupies.",
+  "citedBy": [
+   "cairo"
+  ]
+ },
+ {
+  "id": "the-new-typography",
+  "title": "The New Typography",
+  "author": "Jan Tschichold",
+  "year": 1928,
+  "coverQuery": "The New Typography Jan Tschichold",
+  "access": "buy",
+  "publisherUrl": "https://www.ucpress.edu/",
+  "category": "typography",
+  "level": "specialist",
+  "hours": 7,
+  "whyItMatters": "The founding argument for asymmetric, functional layout. Read it to understand what the rules were reacting against.",
+  "citedBy": [
+   "tschichold"
+  ]
+ },
+ {
+  "id": "how-to-bierut",
+  "title": "How to Use Graphic Design to Sell Things, Explain Things, Make Things Look Better…",
+  "author": "Michael Bierut",
+  "year": 2015,
+  "coverQuery": "How to Michael Bierut",
+  "access": "buy",
+  "publisherUrl": "https://www.harpercollins.com/",
+  "category": "career",
+  "level": "foundational",
+  "hours": 8,
+  "whyItMatters": "Thirty-five projects with the reasoning shown, by a Pentagram partner. The closest thing to sitting in on a senior designer's client meetings.",
+  "citedBy": [
+   "bierut"
+  ]
+ },
+ {
+  "id": "book-of-trees",
+  "title": "The Book of Trees",
+  "author": "Manuel Lima",
+  "year": 2014,
+  "coverQuery": "The Book of Trees Manuel Lima",
+  "access": "buy",
+  "publisherUrl": "https://papress.com/",
+  "category": "dataviz",
+  "level": "specialist",
+  "hours": 5,
+  "whyItMatters": "Eight hundred years of hierarchy visualisation. Useful the next time you have to draw an org chart or a work-breakdown structure and want it to be good.",
+  "citedBy": [
+   "lima"
+  ]
+ },
+ {
+  "id": "stop-stealing-sheep",
+  "title": "Stop Stealing Sheep & Find Out How Type Works",
+  "author": "Erik Spiekermann",
+  "year": 1993,
+  "coverQuery": "Stop Stealing Sheep Spiekermann",
+  "access": "buy",
+  "publisherUrl": "https://www.peachpit.com/",
+  "category": "typography",
+  "level": "foundational",
+  "hours": 4,
+  "whyItMatters": "Type explained for people who have to work with engineers and managers. The vocabulary in here survives a technical review.",
+  "citedBy": [
+   "spiekermann"
+  ]
+ },
+ {
+  "id": "visual-explanations",
+  "title": "Visual Explanations",
+  "author": "Edward R. Tufte",
+  "year": 1997,
+  "coverQuery": "Visual Explanations Tufte",
+  "access": "buy",
+  "publisherUrl": "https://www.edwardtufte.com/",
+  "category": "dataviz",
+  "level": "advanced",
+  "hours": 6,
+  "whyItMatters": "On showing causality, process and change over time. The Challenger and cholera chapters are the best case studies in the consequences of a badly designed graphic.",
+  "citedBy": [
+   "tufte"
+  ]
+ },
+ {
+  "id": "beautiful-evidence",
+  "title": "Beautiful Evidence",
+  "author": "Edward R. Tufte",
+  "year": 2006,
+  "coverQuery": "Beautiful Evidence Tufte",
+  "access": "buy",
+  "publisherUrl": "https://www.edwardtufte.com/",
+  "category": "dataviz",
+  "level": "advanced",
+  "hours": 7,
+  "whyItMatters": "Introduces sparklines and the argument that data graphics belong inside sentences. Directly applicable to dense report layouts.",
+  "citedBy": [
+   "tufte"
+  ]
+ },
+ {
+  "id": "information-dashboard-design",
+  "title": "Information Dashboard Design",
+  "author": "Stephen Few",
+  "year": 2006,
+  "coverQuery": "Information Dashboard Design Stephen Few",
+  "access": "buy",
+  "publisherUrl": "https://www.analyticspress.com/",
+  "category": "dataviz",
+  "level": "advanced",
+  "hours": 8,
+  "whyItMatters": "The single most directly useful book for anyone building dashboards. A catalogue of failure modes you will recognise from your own past work.",
+  "citedBy": [
+   "few"
+  ]
+ },
+ {
+  "id": "now-you-see-it",
+  "title": "Now You See It",
+  "author": "Stephen Few",
+  "year": 2009,
+  "coverQuery": "Now You See It Stephen Few",
+  "access": "buy",
+  "publisherUrl": "https://www.analyticspress.com/",
+  "category": "dataviz",
+  "level": "advanced",
+  "hours": 9,
+  "whyItMatters": "Visual analysis techniques rather than chart decoration. Teaches you to interrogate data before you design it.",
+  "citedBy": [
+   "few"
+  ]
+ },
+ {
+  "id": "semiology-of-graphics",
+  "title": "Semiology of Graphics",
+  "author": "Jacques Bertin",
+  "year": 1967,
+  "coverQuery": "Semiology of Graphics Bertin",
+  "access": "buy",
+  "publisherUrl": "https://esripress.esri.com/",
+  "category": "dataviz",
+  "level": "specialist",
+  "hours": 14,
+  "whyItMatters": "The theoretical foundation under every chart you have ever made — the visual variables of position, size, shape, value, colour, orientation and texture. Hard going, permanently useful.",
+  "citedBy": [
+   "cairo",
+   "lima"
+  ]
+ },
+ {
+  "id": "data-points",
+  "title": "Data Points",
+  "author": "Nathan Yau",
+  "year": 2013,
+  "coverQuery": "Data Points Nathan Yau",
+  "access": "buy",
+  "publisherUrl": "https://www.wiley.com/",
+  "category": "dataviz",
+  "level": "intermediate",
+  "hours": 6,
+  "whyItMatters": "Visualisation treated as a design medium rather than a statistical output. A good bridge for a designer entering the field.",
+  "citedBy": []
+ },
+ {
+  "id": "book-of-circles",
+  "title": "The Book of Circles",
+  "author": "Manuel Lima",
+  "year": 2017,
+  "coverQuery": "The Book of Circles Manuel Lima",
+  "access": "buy",
+  "publisherUrl": "https://papress.com/",
+  "category": "dataviz",
+  "level": "specialist",
+  "hours": 5,
+  "whyItMatters": "A visual history of circular information design. Worth owning for the reference imagery alone when you need a form other than bars.",
+  "citedBy": [
+   "lima"
+  ]
+ },
+ {
+  "id": "design-of-everyday-things",
+  "title": "The Design of Everyday Things",
+  "author": "Don Norman",
+  "year": 1988,
+  "coverQuery": "The Design of Everyday Things Norman",
+  "access": "buy",
+  "publisherUrl": "https://mitpress.mit.edu/",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 9,
+  "whyItMatters": "Affordances, signifiers, mapping and error. The vocabulary that lets you explain why something does not work without saying you dislike it.",
+  "citedBy": []
+ },
+ {
+  "id": "universal-principles",
+  "title": "Universal Principles of Design",
+  "author": "William Lidwell, Kritina Holden, Jill Butler",
+  "year": 2003,
+  "coverQuery": "Universal Principles of Design Lidwell",
+  "access": "buy",
+  "publisherUrl": "https://www.quarto.com/",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 8,
+  "whyItMatters": "125 principles, one spread each, with the research behind them. The most efficient reference on the shelf when you need to name what you are doing.",
+  "citedBy": []
+ },
+ {
+  "id": "understanding-comics",
+  "title": "Understanding Comics",
+  "author": "Scott McCloud",
+  "year": 1993,
+  "coverQuery": "Understanding Comics Scott McCloud",
+  "access": "buy",
+  "publisherUrl": "https://www.harpercollins.com/",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 5,
+  "whyItMatters": "The best book about sequential visual storytelling ever written, and it is not really about comics. Read it before designing anything that unfolds in steps — a report, a deck, a motion piece.",
+  "citedBy": []
+ },
+ {
+  "id": "ways-of-seeing",
+  "title": "Ways of Seeing",
+  "author": "John Berger",
+  "year": 1972,
+  "coverQuery": "Ways of Seeing John Berger",
+  "access": "buy",
+  "publisherUrl": "https://www.penguin.co.uk/",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 3,
+  "whyItMatters": "How images carry power and ideology. Short, and it permanently changes how you look at advertising and corporate photography.",
+  "citedBy": []
+ },
+ {
+  "id": "politics-of-design",
+  "title": "The Politics of Design",
+  "author": "Ruben Pater",
+  "year": 2016,
+  "coverQuery": "The Politics of Design Ruben Pater",
+  "access": "buy",
+  "publisherUrl": "https://www.bispublishers.com/",
+  "category": "thinking",
+  "level": "intermediate",
+  "hours": 4,
+  "whyItMatters": "A field guide to how type, colour, imagery and symbols read differently across cultures. Unusually relevant when you design bilingually for an international audience.",
+  "citedBy": []
+ },
+ {
+  "id": "making-breaking-grid",
+  "title": "Making and Breaking the Grid",
+  "author": "Timothy Samara",
+  "year": 2002,
+  "coverQuery": "Making and Breaking the Grid Samara",
+  "access": "buy",
+  "publisherUrl": "https://www.quarto.com/",
+  "category": "grids",
+  "level": "intermediate",
+  "hours": 6,
+  "whyItMatters": "The practical companion to Müller-Brockmann — dozens of worked layouts showing the grid applied and then deliberately broken.",
+  "citedBy": []
+ },
+ {
+  "id": "typographic-systems",
+  "title": "Typographic Systems of Design",
+  "author": "Timothy Samara",
+  "year": 2007,
+  "coverQuery": "Typographic Systems Samara",
+  "access": "buy",
+  "publisherUrl": "https://papress.com/",
+  "category": "grids",
+  "level": "intermediate",
+  "hours": 5,
+  "whyItMatters": "Eight structural systems beyond the column grid — axial, radial, modular, transitional. The book that gets you out of a layout rut.",
+  "citedBy": []
+ },
+ {
+  "id": "geometry-of-design",
+  "title": "Geometry of Design",
+  "author": "Kimberly Elam",
+  "year": 2001,
+  "coverQuery": "Geometry of Design Kimberly Elam",
+  "access": "buy",
+  "publisherUrl": "https://papress.com/",
+  "category": "grids",
+  "level": "intermediate",
+  "hours": 4,
+  "whyItMatters": "Proportion analysed across real posters, products and architecture. Gives you a defensible reason for a layout decision beyond 'it feels right'.",
+  "citedBy": []
+ },
+ {
+  "id": "graphic-design-new-basics",
+  "title": "Graphic Design: The New Basics",
+  "author": "Ellen Lupton & Jennifer Cole Phillips",
+  "year": 2008,
+  "coverQuery": "Graphic Design The New Basics Lupton",
+  "access": "buy",
+  "publisherUrl": "https://papress.com/",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 6,
+  "whyItMatters": "Form fundamentals — point, line, plane, rhythm, scale, hierarchy — taught rigorously. The best refresher when your work starts running on habit.",
+  "citedBy": [
+   "lupton"
+  ]
+ },
+ {
+  "id": "design-systems-kholmatova",
+  "title": "Design Systems",
+  "author": "Alla Kholmatova",
+  "year": 2017,
+  "coverQuery": "Design Systems Alla Kholmatova",
+  "access": "buy",
+  "publisherUrl": "https://www.smashingmagazine.com/",
+  "category": "identity",
+  "level": "advanced",
+  "hours": 6,
+  "whyItMatters": "How design systems actually get adopted inside organisations, including why most fail. Directly relevant to writing brand guidelines people follow.",
+  "citedBy": []
+ },
+ {
+  "id": "brand-gap",
+  "title": "The Brand Gap",
+  "author": "Marty Neumeier",
+  "year": 2003,
+  "coverQuery": "The Brand Gap Marty Neumeier",
+  "access": "buy",
+  "publisherUrl": "https://www.peachpit.com/",
+  "category": "identity",
+  "level": "foundational",
+  "hours": 2,
+  "whyItMatters": "Reads in an hour and gives you the business vocabulary of branding — differentiation, collaboration, innovation, validation, cultivation. Useful in the room where budgets are decided.",
+  "citedBy": []
+ },
+ {
+  "id": "identity-designed-book",
+  "title": "Identity Designed",
+  "author": "David Airey",
+  "year": 2019,
+  "coverQuery": "Identity Designed David Airey",
+  "access": "buy",
+  "publisherUrl": "https://www.quarto.com/",
+  "category": "identity",
+  "level": "intermediate",
+  "hours": 5,
+  "whyItMatters": "Full identity case studies with process, not just final marks. The closest thing to watching how other studios structure a brand project.",
+  "citedBy": []
+ },
+ {
+  "id": "how-to-be-graphic-designer",
+  "title": "How to be a Graphic Designer without Losing Your Soul",
+  "author": "Adrian Shaughnessy",
+  "year": 2005,
+  "coverQuery": "How to be a Graphic Designer without Losing Your Soul Shaughnessy",
+  "access": "buy",
+  "publisherUrl": "https://papress.com/",
+  "category": "career",
+  "level": "intermediate",
+  "hours": 5,
+  "whyItMatters": "The practical career book — clients, money, studios, ethics, saying no. Written by someone who ran a studio rather than by a consultant.",
+  "citedBy": []
+ },
+ {
+  "id": "resonate-duarte",
+  "title": "Resonate",
+  "author": "Nancy Duarte",
+  "year": 2010,
+  "coverQuery": "Resonate Nancy Duarte",
+  "access": "buy",
+  "publisherUrl": "https://www.wiley.com/",
+  "category": "career",
+  "level": "intermediate",
+  "hours": 6,
+  "whyItMatters": "Structures a presentation as a story with tension and resolution. If you want to give talks and teach, this is the book on how to shape them.",
+  "citedBy": []
+ },
+ {
+  "id": "slideology",
+  "title": "slide:ology",
+  "author": "Nancy Duarte",
+  "year": 2008,
+  "coverQuery": "slideology Nancy Duarte",
+  "access": "buy",
+  "publisherUrl": "https://www.oreilly.com/",
+  "category": "career",
+  "level": "intermediate",
+  "hours": 5,
+  "whyItMatters": "The craft half of presentation work — diagrams, data slides, storyboarding. Pairs with Resonate, which handles the argument.",
+  "citedBy": []
+ },
+ {
+  "id": "thinking-fast-and-slow",
+  "title": "Thinking, Fast and Slow",
+  "author": "Daniel Kahneman",
+  "year": 2011,
+  "coverQuery": "Thinking Fast and Slow Kahneman",
+  "access": "buy",
+  "publisherUrl": "https://us.macmillan.com/",
+  "category": "thinking",
+  "level": "advanced",
+  "hours": 16,
+  "whyItMatters": "Why people misread numbers, anchor on the first figure they see, and prefer a vivid story to a correct one. Essential background for anyone designing how data gets understood.",
+  "citedBy": []
+ },
+ {
+  "id": "meggs-history",
+  "title": "Meggs' History of Graphic Design",
+  "author": "Philip B. Meggs & Alston W. Purvis",
+  "year": 1983,
+  "coverQuery": "Meggs History of Graphic Design",
+  "access": "buy",
+  "publisherUrl": "https://www.wiley.com/",
+  "category": "thinking",
+  "level": "foundational",
+  "hours": 25,
+  "whyItMatters": "The standard history of the field. You do not read it end to end — you keep it and look things up, which is how you stop reinventing 1955 by accident.",
+  "citedBy": []
+ }
+]

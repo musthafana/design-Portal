@@ -1,0 +1,39 @@
+{
+  "note": "Drives the relevance score and the 'for you' flag. He is a SENIOR GENERAL DESIGNER first — everything in design matters. The specialism list is his edge, not his boundary. Sectors are a light bonus only, never a filter.",
+  "core": [
+    "graphic design","visual design","brand identity","branding","rebrand","identity system","design system",
+    "typography","typeface","variable font","lettering","type design",
+    "grid","layout","composition","editorial design","magazine design","book design","print design",
+    "colour","color theory","packaging","poster","logo","wordmark","art direction","creative direction",
+    "motion design","animation","title sequence","video editing","storytelling",
+    "photography","illustration","advertising","campaign","design award","design history",
+    "ui design","ux design","interface","accessibility","wcag","design tokens","figma","adobe",
+    "information design","data visualisation","data visualization","infographic","chart","diagram","dashboard",
+    "presentation design","annual report","sustainability report","wayfinding","signage","environmental graphics",
+    "generative ai","ai design","prompt","image generation","video generation","creative automation",
+    "design leadership","portfolio","freelance","design business","pricing","design ethics","copyright"
+  ],
+  "specialism": [
+    "power bi","fabric","dax","semantic model","power query","tableau","looker",
+    "ibcs","pl-300","dp-600","report design","business intelligence","kpi","small multiples",
+    "technical writing","documentation","brand guidelines","style guide","corporate communication"
+  ],
+  "sectors": [
+    "energy","oil and gas","infrastructure","construction","government","public sector","healthcare",
+    "education","culture","museum","finance","manufacturing","transport","non-profit"
+  ],
+  "regions": ["uae","abu dhabi","dubai","gcc","middle east","mena","saudi","qatar"],
+  "weights": {
+    "core": 1.0,
+    "specialism": 1.15,
+    "sectors": 0.35,
+    "regions": 0.4
+  },
+  "categoryPriority": { "design": 1.0, "branding": 0.95, "dataviz": 0.95, "ai": 0.9 },
+  "watch": [
+    { "label": "PL-300 — Microsoft Power BI Data Analyst", "note": "Certification under evaluation" },
+    { "label": "IBCS — International Business Communication Standards", "note": "Certification under evaluation" },
+    { "label": "Communication Arts Typography", "note": "Award deadline 18 Sep 2026" },
+    { "label": "Dubai Lynx Creativity Week", "note": "6–8 Oct 2026, Dubai" }
+  ]
+}

@@ -1,0 +1,102 @@
+.container {
+  padding: 4rem;
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0;
+  color: var(--paper);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.personCard {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 1.5rem;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.personCard:hover {
+  background: var(--surface2);
+  border-color: var(--line2);
+  transform: translateY(-2px);
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--paper);
+  margin: 0 0 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.personCard:hover .name {
+  color: var(--brass);
+}
+
+.role {
+  font-family: var(--font-data);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+  margin: 0;
+}
+
+.drawerContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTitle {
+  font-family: var(--font-data);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.bookLink {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.bookLink:hover {
+  background: var(--surface2);
+  border-color: var(--brass-dim);
+}
+
+.bookLinkTitle {
+  font-family: var(--font-text);
+  font-weight: 500;
+  color: var(--paper);
+  font-size: 14px;
+}
+
+.bookLinkAuthor {
+  font-family: var(--font-data);
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}

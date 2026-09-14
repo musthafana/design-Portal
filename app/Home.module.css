@@ -1,0 +1,211 @@
+.canvasContainer {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, #09120c 0%, #020403 100%);
+}
+
+.main {
+  background-color: transparent;
+  color: var(--text);
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+/* 1. Subtle, performant film grain overlay */
+.main::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+/* 2. Massive Editorial Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 4rem;
+  padding-bottom: 8rem;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 16vw, 22rem);
+  line-height: 0.75;
+  letter-spacing: -0.05em;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.heroTitle .italic {
+  font-style: italic;
+  color: var(--accent);
+  margin-left: 8vw;
+  display: block;
+}
+
+.heroSub {
+  font-family: var(--font-data);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-top: 4rem;
+  max-width: 450px;
+  line-height: 1.6;
+  color: var(--text);
+  opacity: 0.7;
+}
+
+/* 3. The Index List (Pentagram Style Grid) */
+.index {
+  padding: 0 4rem 12rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.indexHeader {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-data);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+  padding-bottom: 2rem;
+  opacity: 0.5;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  align-items: center;
+  padding: 4rem 0;
+  border-top: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--text);
+  position: relative;
+  overflow: hidden;
+  transition: padding 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+/* Background fill on hover (slides from bottom) */
+.row::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--text);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 0;
+}
+
+.row:hover::before {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.rowNumber {
+  font-family: var(--font-data);
+  font-size: 1rem;
+  opacity: 0.5;
+  z-index: 1;
+  transition: color 0.4s;
+}
+
+.rowContent {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.rowName {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 5rem);
+  font-weight: 400;
+  margin: 0;
+  transition: color 0.4s;
+}
+
+.rowSub {
+  font-family: var(--font-text);
+  font-size: 1.1rem;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transform: translateY(10px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--bg);
+}
+
+.row:hover {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.row:hover .rowSub {
+  opacity: 0.8;
+  height: 1.5rem;
+  transform: translateY(0);
+  margin-top: 1rem;
+}
+
+.rowArrow {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  z-index: 1;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: rotate(0deg) translateX(0);
+}
+
+/* Color inversions on hover */
+.row:hover .rowNumber,
+.row:hover .rowName,
+.row:hover .rowArrow {
+  color: var(--bg);
+}
+
+.row:hover .rowArrow {
+  transform: rotate(45deg) translateX(15px);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem;
+  }
+  .heroTitle {
+    font-size: clamp(4rem, 20vw, 8rem);
+  }
+  .heroTitle .italic {
+    margin-left: 0;
+  }
+  .index {
+    padding: 0 2rem 6rem 2rem;
+  }
+  .row {
+    grid-template-columns: 50px 1fr auto;
+    padding: 2rem 0;
+  }
+  .rowArrow {
+    font-size: 2rem;
+  }
+  .row:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
