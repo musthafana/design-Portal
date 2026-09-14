@@ -1,0 +1,292 @@
+[
+  {
+    "slug": "annual-sustainability-report-design",
+    "category": "service",
+    "title": "Annual and Sustainability Report Design",
+    "shortIntro": "Design of annual reports, ESG, and sustainability reports for listed companies, government entities, and large private groups.",
+    "fullDescription": "Annual and sustainability reports are high-stakes, highly visible documents that summarize an organization's financial and social performance. They require rigorous layout systems, precise data visualization, and an ability to manage complex, multi-stakeholder feedback cycles.",
+    "problemSolved": "Organizations struggle to present dense financial and sustainability data in a way that is readable, engaging, and compliant. They need a designer who can handle vast amounts of text and data without losing the brand's visual integrity.",
+    "valueProposition": "A well-designed report builds investor trust, satisfies regulatory requirements, and serves as a flagship piece of corporate communication. The value lies in clarity, accuracy, and process management under tight deadlines.",
+    "finalResult": "A professionally typeset, brand-compliant, print-ready or interactive digital report that clearly communicates the organization's performance and strategy.",
+    "clientTypes": [
+      "Listed companies",
+      "Government entities",
+      "Energy and infrastructure organizations",
+      "Healthcare organizations",
+      "Large private groups",
+      "Communication and reporting agencies"
+    ],
+    "projectSources": {
+      "direct": [
+        "Corporate careers and contract-opportunity pages",
+        "Communications, marketing and corporate affairs departments",
+        "Sustainability, ESG, investor relations and annual-reporting teams",
+        "Company procurement and supplier-registration portals"
+      ],
+      "networking": [
+        "LinkedIn",
+        "Design and reporting communities",
+        "Professional associations"
+      ],
+      "partnerships": [
+        "Annual-report production agencies",
+        "ESG and sustainability consultancies",
+        "Printing and publication companies"
+      ]
+    },
+    "outreachContext": "annual reporting or ESG disclosure",
+    "outreachService": "annual and sustainability report design",
+    "discoveryQuestions": [
+      "What is the estimated page count?",
+      "Will the report be single language or bilingual?",
+      "Is the content finalized, or will it be supplied in phases?",
+      "How many charts, graphs, and tables are required?",
+      "Is there a firm regulatory filing deadline?",
+      "Who are the final sign-off stakeholders?",
+      "Do you require print coordination or just digital files?"
+    ],
+    "processStages": [
+      { "title": "Enquiry received", "desc": "Initial contact and high-level requirements." },
+      { "title": "Ethical and sector screening", "desc": "Reviewing the client's industry and reporting contents." },
+      { "title": "Discovery and requirements gathering", "desc": "Confirming page count, languages, and timelines." },
+      { "title": "Review of content, data and source files", "desc": "Assessing the readiness of the copy and data." },
+      { "title": "Scope definition", "desc": "Detailing exact deliverables and revision rounds." },
+      { "title": "Proposal and quotation", "desc": "Submitting the formal commercial offer." },
+      { "title": "Agreement and advance payment", "desc": "Signing the contract and securing the deposit." },
+      { "title": "Content structure or information architecture", "desc": "Planning the report flow." },
+      { "title": "Visual direction", "desc": "Presenting cover concepts and spread samples." },
+      { "title": "Initial design concept", "desc": "Applying the approved direction to key chapters." },
+      { "title": "Client review", "desc": "First round of consolidated stakeholder feedback." },
+      { "title": "Agreed revision rounds", "desc": "Executing updates based on the agreed scope." },
+      { "title": "Quality assurance", "desc": "Checking typesetting, data accuracy, and alignment." },
+      { "title": "Final approval", "desc": "Sign-off from the executive team." },
+      { "title": "Final file preparation and handover", "desc": "Delivering print and interactive PDFs." },
+      { "title": "Balance payment", "desc": "Invoicing the final project milestone." }
+    ],
+    "deliverables": [
+      "Report design direction",
+      "Cover concepts",
+      "Page grid and layout system",
+      "Typography hierarchy",
+      "Charts, tables and infographics",
+      "ESG and sustainability data visualization",
+      "English or bilingual page layouts",
+      "Print-ready PDF",
+      "Optimized interactive or digital PDF"
+    ],
+    "pricingMethods": [
+      { "name": "Fixed project price", "desc": "Recommended when the page count and chart volume are clearly defined." },
+      { "name": "Per-page pricing", "desc": "Useful when the page complexity is categorized (e.g., text-heavy vs. data-heavy) and the content is stable." }
+    ],
+    "pricingTiers": [
+      { "name": "ESSENTIAL", "desc": "For clearly defined, smaller reports (under 40 pages) with client-supplied content and limited charts.", "price": "From $4,000" },
+      { "name": "PROFESSIONAL", "desc": "For complete ESG or Annual Reports requiring information design, multiple page types, custom charts, and structured review stages.", "price": "From $12,000" },
+      { "name": "ENTERPRISE", "desc": "For complex, bilingual, multi-stakeholder corporate projects requiring extended coordination and strict regulatory deadlines.", "price": "Contact for quotation" }
+    ],
+    "priceFactors": [
+      "Volume of pages or screens",
+      "Complexity of content",
+      "Number of charts and infographics",
+      "Number of languages",
+      "Revision rounds",
+      "Delivery schedule"
+    ],
+    "exclusions": [
+      "Copywriting",
+      "Translation",
+      "Proofreading",
+      "Photography",
+      "Stock-image licensing",
+      "Printing",
+      "Unlimited revisions"
+    ],
+    "duration": "4 - 12 weeks",
+    "typicalRisks": "Long approval chains and heavy revision cycles. Late changes to financial data disrupting layout.",
+    "ethicalNote": "Clean in almost every sector. Check the client's core business — a conventional bank's annual report is a common grey area worth thinking through before you accept."
+  },
+  {
+    "slug": "dashboard-design-service",
+    "category": "service",
+    "title": "Dashboard Design as a Service",
+    "shortIntro": "Taking working-but-ugly Power BI reports and rebuilding them so executives can actually read them.",
+    "fullDescription": "Business intelligence developers excel at data modeling and DAX, but often lack UX and information design skills. This service bridges that gap, focusing on information hierarchy, layout, color theory, and chart selection to turn raw data into actionable insights.",
+    "problemSolved": "Executives abandon data dashboards because they are visually overwhelming, cluttered, and impossible to navigate. Data teams waste time building reports that nobody uses.",
+    "valueProposition": "A well-designed dashboard increases user adoption, speeds up decision-making, and elevates the perceived value of the data team's work.",
+    "finalResult": "A clear, intuitive, and brand-compliant dashboard interface, often delivered alongside a reusable Power BI theme or design system.",
+    "clientTypes": [
+      "Data, business intelligence and digital transformation departments",
+      "Consulting firms",
+      "Power BI and data consulting firms",
+      "Internal corporate communication teams"
+    ],
+    "projectSources": {
+      "direct": [
+        "Data, business intelligence and digital transformation departments"
+      ],
+      "networking": [
+        "LinkedIn",
+        "Business networking groups",
+        "Former colleagues and clients"
+      ],
+      "partnerships": [
+        "Management consultancies",
+        "Power BI and data consulting firms"
+      ]
+    },
+    "outreachContext": "improving BI adoption and executive reporting",
+    "outreachService": "Power BI dashboard UX and visual design",
+    "discoveryQuestions": [
+      "Who is the primary user of this dashboard?",
+      "What are the top 3 questions they need this dashboard to answer?",
+      "Is the underlying data model and DAX already complete?",
+      "Are there strict corporate brand guidelines to follow?",
+      "Do you need a one-off redesign or a reusable theme file?"
+    ],
+    "processStages": [
+      { "title": "Enquiry received", "desc": "Initial contact and high-level requirements." },
+      { "title": "Ethical and sector screening", "desc": "Reviewing the client's industry." },
+      { "title": "Discovery and requirements gathering", "desc": "Understanding the user needs and current dashboard state." },
+      { "title": "Review of content, data and source files", "desc": "Auditing the existing Power BI file." },
+      { "title": "Scope definition", "desc": "Detailing exact deliverables and revision rounds." },
+      { "title": "Proposal and quotation", "desc": "Submitting the formal commercial offer." },
+      { "title": "Agreement and advance payment", "desc": "Signing the contract and securing the deposit." },
+      { "title": "Information architecture", "desc": "Planning the navigation and page structure." },
+      { "title": "Visual direction", "desc": "Establishing colors, typography, and chart styles." },
+      { "title": "Initial design concept", "desc": "Applying the design to the Executive Summary view." },
+      { "title": "Client review", "desc": "First round of consolidated stakeholder feedback." },
+      { "title": "Agreed revision rounds", "desc": "Refining the UI based on feedback." },
+      { "title": "Quality assurance", "desc": "Testing contrast, responsiveness, and accessibility." },
+      { "title": "Final approval", "desc": "Sign-off from the executive or BI team." },
+      { "title": "Final file preparation and handover", "desc": "Delivering UI assets, theme files, and guidelines." },
+      { "title": "Balance payment", "desc": "Invoicing the final project milestone." }
+    ],
+    "deliverables": [
+      "Dashboard visual audit",
+      "Information hierarchy",
+      "Page and navigation structure",
+      "Executive summary view",
+      "Visual theme",
+      "Chart selection recommendations",
+      "KPI card system",
+      "Power BI theme file where required",
+      "Handover notes for developers or BI teams"
+    ],
+    "pricingMethods": [
+      { "name": "Fixed project price", "desc": "Recommended for redesigning a specific set of existing dashboard pages." },
+      { "name": "Day rate", "desc": "Suitable for consulting, on-site support, or ongoing dashboard UI improvements." }
+    ],
+    "pricingTiers": [
+      { "name": "ESSENTIAL", "desc": "Visual audit and redesign of a single Executive Summary dashboard view.", "price": "From $2,500" },
+      { "name": "PROFESSIONAL", "desc": "Complete redesign of a multi-page report, including navigation system, KPI cards, and custom Power BI theme file.", "price": "From $7,500" },
+      { "name": "ENTERPRISE", "desc": "Development of a comprehensive corporate dashboard design system, custom visual library, and training for the internal BI team.", "price": "Contact for quotation" }
+    ],
+    "priceFactors": [
+      "Volume of pages or screens",
+      "Number of charts and infographics",
+      "Quality of source files",
+      "Editable file handover",
+      "Data-cleaning or content-support requirements"
+    ],
+    "exclusions": [
+      "Data cleaning",
+      "Data analysis",
+      "DAX development",
+      "Power BI data modelling",
+      "System integration"
+    ],
+    "duration": "2 - 6 weeks",
+    "typicalRisks": "Clients may expect you to also build the data model. Decide where your scope ends and write it down.",
+    "ethicalNote": "Clean. Take care only if the underlying data serves a restricted or unethical product line."
+  },
+  {
+    "slug": "bilingual-brand-systems",
+    "category": "service",
+    "title": "Arabic-Latin Bilingual Brand Systems",
+    "shortIntro": "Identity systems that work properly in both scripts — matched type pairing, mirrored layouts, bilingual lock-ups and guidelines.",
+    "fullDescription": "Creating a cohesive brand across distinct scripts requires deep typographic knowledge and cultural awareness. This service ensures that an organization's visual identity maintains its integrity, hierarchy, and aesthetic quality whether read left-to-right in English or right-to-left in Arabic.",
+    "problemSolved": "Global brands entering the MENA region often suffer from mismatched typography, broken layouts, and culturally insensitive adaptations. Local entities struggle to find designers who truly understand both scripts.",
+    "valueProposition": "A seamless bilingual identity prevents brand dilution, ensures professional communication across all channels, and resonates authentically with diverse audiences.",
+    "finalResult": "A comprehensive bilingual brand guideline, paired typography system, and a suite of ready-to-use templates that function perfectly in both languages.",
+    "clientTypes": [
+      "Government entities",
+      "Educational institutions",
+      "Large private groups",
+      "Non-profit organizations"
+    ],
+    "projectSources": {
+      "direct": [
+        "Communications, marketing and corporate affairs departments",
+        "Government tender and vendor portals"
+      ],
+      "networking": [
+        "Relevant industry events",
+        "Design and reporting communities"
+      ],
+      "partnerships": [
+        "Branding agencies",
+        "Translation and localization companies"
+      ]
+    },
+    "outreachContext": "regional brand localization and bilingual communication",
+    "outreachService": "Arabic-Latin bilingual identity systems",
+    "discoveryQuestions": [
+      "Are we starting from an existing Latin brand, or creating a new bilingual brand from scratch?",
+      "Do you have an approved Arabic brand name and copy?",
+      "Which specific applications require immediate bilingual templates?",
+      "Are there custom typeface licensing requirements?"
+    ],
+    "processStages": [
+      { "title": "Enquiry received", "desc": "Initial contact and high-level requirements." },
+      { "title": "Ethical and sector screening", "desc": "Reviewing the client's industry." },
+      { "title": "Discovery and requirements gathering", "desc": "Auditing the current brand assets." },
+      { "title": "Scope definition", "desc": "Detailing exact deliverables." },
+      { "title": "Proposal and quotation", "desc": "Submitting the formal commercial offer." },
+      { "title": "Agreement and advance payment", "desc": "Signing the contract and securing the deposit." },
+      { "title": "Typographic research", "desc": "Exploring Arabic typefaces that match the Latin brand voice." },
+      { "title": "Visual direction", "desc": "Presenting type pairings and bilingual logo lock-ups." },
+      { "title": "Initial design concept", "desc": "Applying the system to key brand touchpoints." },
+      { "title": "Client review", "desc": "First round of consolidated feedback." },
+      { "title": "Agreed revision rounds", "desc": "Refining the lock-ups and pairings." },
+      { "title": "Quality assurance", "desc": "Testing RTL layouts and typography rendering." },
+      { "title": "Final approval", "desc": "Sign-off from the brand team." },
+      { "title": "Final file preparation and handover", "desc": "Delivering guidelines, fonts (if licensed), and templates." },
+      { "title": "Balance payment", "desc": "Invoicing the final project milestone." }
+    ],
+    "deliverables": [
+      "Arabic and Latin type pairing",
+      "Bilingual logo lock-up rules when applicable",
+      "Right-to-left and left-to-right layout principles",
+      "Mirrored composition system",
+      "Bilingual typography hierarchy",
+      "Stationery and communication templates",
+      "Brand-guideline document",
+      "Editable master files"
+    ],
+    "pricingMethods": [
+      { "name": "Fixed project price", "desc": "Recommended when the scope and deliverable templates are clearly defined." },
+      { "name": "Licensing or usage fee", "desc": "Applicable to proprietary design systems or bespoke type modifications licensed to multiple business units." }
+    ],
+    "pricingTiers": [
+      { "name": "ESSENTIAL", "desc": "Type pairing, basic lock-up rules, and a single bilingual stationery set.", "price": "From $5,000" },
+      { "name": "PROFESSIONAL", "desc": "Complete bilingual system including RTL layout principles, presentation templates, and a full brand guideline document.", "price": "From $15,000" },
+      { "name": "ENTERPRISE", "desc": "Extensive brand localization for global entities, including bespoke Arabic logotype development, full digital template suite, and implementation workshops.", "price": "Contact for quotation" }
+    ],
+    "priceFactors": [
+      "Number of templates or design routes",
+      "Number of languages",
+      "Quality of source files",
+      "Editable file handover",
+      "Usage and licensing"
+    ],
+    "exclusions": [
+      "Copywriting",
+      "Translation",
+      "Proofreading",
+      "Font licensing fees",
+      "Web development"
+    ],
+    "duration": "4 - 10 weeks",
+    "typicalRisks": "Assuming translation is included. Make sure to define that Arabic copy must be provided by professional copywriters.",
+    "ethicalNote": "Clean. Ensure the brand being localized aligns with ethical guidelines."
+  }
+]

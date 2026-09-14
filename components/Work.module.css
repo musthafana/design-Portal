@@ -188,3 +188,58 @@
   box-shadow: 0 12px 40px rgba(0,0,0,0.3);
   border-color: var(--line2);
 }
+
+.serviceLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.interactiveCard {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.serviceLink:focus-visible .interactiveCard {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.interactiveCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  border-color: var(--text-muted);
+}
+
+.interactiveCard:hover .arrow {
+  transform: translateX(4px);
+}
+
+.lineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardHoverIndicator {
+  margin-top: auto;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--line);
+  font-family: var(--font-data);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}

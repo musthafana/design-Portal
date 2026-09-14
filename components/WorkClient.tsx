@@ -4,8 +4,9 @@ import { Tabs, Tag } from 'antd';
 import { motion } from 'framer-motion';
 import styles from './Work.module.css';
 import Thumbnail from './Thumbnail';
+import TransitionLink from './TransitionLink';
 
-export default function WorkClient({ work, opportunities, ideas }: { work: any[], opportunities: any[], ideas: any }) {
+export default function WorkClient({ work, opportunities, ideas, services }: { work: any[], opportunities: any[], ideas: any, services: any[] }) {
   const containerVars = {
     hidden: { opacity: 0 },
     show: { opacity: 1, transition: { staggerChildren: 0.1 } }
@@ -122,7 +123,7 @@ export default function WorkClient({ work, opportunities, ideas }: { work: any[]
     },
     {
       key: '3',
-      label: 'Income Ideas',
+      label: 'Services & Income',
       children: (
         <div className={styles.ideasContainer}>
           <div className={styles.screeningBlock}>
@@ -152,22 +153,36 @@ export default function WorkClient({ work, opportunities, ideas }: { work: any[]
             </div>
           </div>
 
-          <div className={styles.grid}>
-            {ideas.income.map((idea: any) => (
-              <div key={idea.id} className={styles.card}>
-                <div className={styles.cardHeader}>
-                  <h3 className={styles.name}>{idea.name}</h3>
-                  <Tag>{idea.kind}</Tag>
-                </div>
-                <div className={styles.content}>
-                  <div className={styles.section}>
-                    <div className={styles.sectionLabel}>WHAT IT IS</div>
-                    <p>{idea.what}</p>
+          <motion.div 
+            className={styles.grid}
+            variants={containerVars}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: "-50px" }}
+          >
+            {services.map((service: any) => (
+              <TransitionLink href={`/work/${service.slug}`} key={service.slug} className={styles.serviceLink}>
+                <motion.div variants={itemVars} className={`${styles.card} ${styles.interactiveCard}`}>
+                  <div className={styles.cardHeader}>
+                    <Thumbnail title={service.title} size="large" showOverlay={false} />
+                    <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                      <h3 className={styles.name}>{service.title}</h3>
+                      <Tag>{service.category}</Tag>
+                    </div>
                   </div>
-                </div>
-              </div>
+                  <div className={styles.content}>
+                    <div className={styles.section}>
+                      <div className={styles.sectionLabel}>WHAT IT IS</div>
+                      <p className={styles.lineClamp}>{service.shortIntro}</p>
+                    </div>
+                  </div>
+                  <div className={styles.cardHoverIndicator}>
+                    View service guide <span className={styles.arrow}>→</span>
+                  </div>
+                </motion.div>
+              </TransitionLink>
             ))}
-          </div>
+          </motion.div>
         </div>
       ),
     },
@@ -180,7 +195,7 @@ export default function WorkClient({ work, opportunities, ideas }: { work: any[]
       </header>
 
       <Tabs 
-        defaultActiveKey="1" 
+        defaultActiveKey="3" 
         items={items} 
         className={styles.tabs}
         tabBarStyle={{ borderColor: 'var(--line)' }}
