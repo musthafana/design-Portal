@@ -53,10 +53,6 @@
 .cardHeader {
   padding: 1.5rem;
   border-bottom: 1px solid var(--line);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
 }
 
 .name {
