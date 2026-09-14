@@ -182,6 +182,26 @@ export default function WorkClient({ work, opportunities, ideas, services }: { w
                 </motion.div>
               </TransitionLink>
             ))}
+
+            {ideas.income
+              .filter((idea: any) => !['report-design-retainer', 'powerbi-design-service', 'bilingual-identity'].includes(idea.id))
+              .map((idea: any) => (
+              <motion.div variants={itemVars} key={idea.id} className={styles.card}>
+                <div className={styles.cardHeader}>
+                  <Thumbnail title={idea.name} size="large" showOverlay={false} />
+                  <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                    <h3 className={styles.name}>{idea.name}</h3>
+                    <Tag>{idea.kind}</Tag>
+                  </div>
+                </div>
+                <div className={styles.content}>
+                  <div className={styles.section}>
+                    <div className={styles.sectionLabel}>WHAT IT IS</div>
+                    <p>{idea.what}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </motion.div>
         </div>
       ),
