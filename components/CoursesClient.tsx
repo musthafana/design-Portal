@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import styles from './Courses.module.css';
 import Thumbnail from './Thumbnail';
+import FavoriteButton from './FavoriteButton';
 
 export default function CoursesClient({ courses }: { courses: any[] }) {
   const containerVars = {
@@ -28,7 +29,8 @@ export default function CoursesClient({ courses }: { courses: any[] }) {
         viewport={{ once: true, margin: "-50px" }}
       >
         {courses.map(course => (
-          <motion.div variants={itemVars} key={course.id} className={styles.card}>
+          <motion.div variants={itemVars} key={course.id} className={`${styles.card} has-favorite`}>
+            <FavoriteButton item={{ id: course.id, type: 'course', title: course.name, subtitle: course.provider, url: course.officialUrl, metadata: course }} />
             <div className={styles.cardHeader}>
               <Thumbnail title={course.name} size="large" showOverlay={true} />
               <div style={{ marginTop: '1rem', display: 'flex', flexDirection: 'column', gap: '0.25rem' }}>

@@ -5,6 +5,7 @@ import { Drawer, Tag, Typography, Button } from 'antd';
 import Link from 'next/link';
 import styles from './People.module.css';
 import booksData from '@/data/books.json';
+import FavoriteButton from './FavoriteButton';
 
 const { Text, Paragraph } = Typography;
 
@@ -19,7 +20,8 @@ export default function PeopleClient({ people }: { people: any[] }) {
 
       <div className={styles.grid}>
         {people.map(person => (
-          <div key={person.id} className={styles.personCard} onClick={() => setSelectedPerson(person)}>
+          <div key={person.id} className={`${styles.personCard} has-favorite`} onClick={() => setSelectedPerson(person)}>
+            <FavoriteButton item={{ id: person.id, type: 'people', title: person.name, subtitle: person.role, url: person.url, metadata: person }} />
             <h3 className={styles.name}>{person.name}</h3>
             <p className={styles.role}>{person.role}</p>
           </div>

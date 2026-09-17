@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './MediaList.module.css';
 import Thumbnail from './Thumbnail';
+import FavoriteButton from './FavoriteButton';
 
 interface MediaItem {
   title: string;
@@ -69,8 +70,9 @@ export default function MediaList({
               viewport={{ once: true, margin: "-20px" }}
               exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.1 } }}
               key={`${item.title}-${idx}`} 
-              className={styles.listItem}
+              className={`${styles.listItem} has-favorite`}
             >
+              <FavoriteButton item={{ id: item.url || item.title, type, title: item.title, subtitle: item.primaryPerson, url: item.url, metadata: item }} className={styles.favBtn} />
               <div className={styles.itemMeta}>
                 {item.year && <span className={styles.year}>{item.year}</span>}
                 <span className={styles.duration}>{item.durationInfo}</span>

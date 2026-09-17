@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import styles from './Work.module.css';
 import Thumbnail from './Thumbnail';
 import TransitionLink from './TransitionLink';
+import FavoriteButton from './FavoriteButton';
 
 export default function WorkClient({ work, opportunities, ideas, services }: { work: any[], opportunities: any[], ideas: any, services: any[] }) {
   const containerVars = {
@@ -29,7 +30,8 @@ export default function WorkClient({ work, opportunities, ideas, services }: { w
           viewport={{ once: true, margin: "-50px" }}
         >
           {work.map(w => (
-            <motion.div variants={itemVars} key={w.id} className={styles.card}>
+            <motion.div variants={itemVars} key={w.id} className={`${styles.card} has-favorite`}>
+              <FavoriteButton item={{ id: w.id, type: 'work', title: w.name, metadata: w }} />
               <div className={styles.cardHeader}>
                 <Thumbnail title={w.name} size="large" showOverlay={true} />
                 <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -81,7 +83,8 @@ export default function WorkClient({ work, opportunities, ideas, services }: { w
           viewport={{ once: true, margin: "-50px" }}
         >
           {opportunities.map(opp => (
-            <motion.div variants={itemVars} key={opp.id} className={styles.card}>
+            <motion.div variants={itemVars} key={opp.id} className={`${styles.card} has-favorite`}>
+              <FavoriteButton item={{ id: opp.id, type: 'work', title: opp.name, metadata: opp }} />
               <div className={styles.cardHeader}>
                 <Thumbnail title={opp.name} size="large" showOverlay={true} />
                 <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -162,7 +165,8 @@ export default function WorkClient({ work, opportunities, ideas, services }: { w
           >
             {services.map((service: any) => (
               <TransitionLink href={`/work/${service.slug}`} key={service.slug} className={styles.serviceLink}>
-                <motion.div variants={itemVars} className={`${styles.card} ${styles.interactiveCard}`}>
+                <motion.div variants={itemVars} className={`${styles.card} ${styles.interactiveCard} has-favorite`}>
+                  <FavoriteButton item={{ id: service.slug, type: 'work', title: service.title, metadata: service }} />
                   <div className={styles.cardHeader}>
                     <Thumbnail title={service.title} size="large" showOverlay={false} />
                     <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -186,7 +190,8 @@ export default function WorkClient({ work, opportunities, ideas, services }: { w
             {ideas.income
               .filter((idea: any) => !['report-design-retainer', 'powerbi-design-service', 'bilingual-identity'].includes(idea.id))
               .map((idea: any) => (
-              <motion.div variants={itemVars} key={idea.id} className={styles.card}>
+              <motion.div variants={itemVars} key={idea.id} className={`${styles.card} has-favorite`}>
+                <FavoriteButton item={{ id: idea.id, type: 'work', title: idea.name, metadata: idea }} />
                 <div className={styles.cardHeader}>
                   <Thumbnail title={idea.name} size="large" showOverlay={false} />
                   <div style={{ marginTop: '1rem', display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './References.module.css';
 import Thumbnail from './Thumbnail';
+import FavoriteButton from './FavoriteButton';
 
 export default function ReferencesClient({ references }: { references: any[] }) {
   const kinds = Array.from(new Set(references.map(r => r.kind)));
@@ -50,8 +51,9 @@ export default function ReferencesClient({ references }: { references: any[] }) 
               href={ref.url} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className={styles.tile}
+              className={`${styles.tile} has-favorite`}
             >
+              <FavoriteButton item={{ id: ref.id, type: 'reference', title: ref.name, subtitle: ref.learn, url: ref.url, metadata: ref }} />
               <Thumbnail title={ref.name} size="large" showOverlay={true} />
               <h3 className={styles.name}>{ref.name} <span className={styles.arrowOut}>↗</span></h3>
               {ref.learn && <p className={styles.learn}>{ref.learn}</p>}

@@ -54,6 +54,7 @@
 }
 
 .tile {
+  position: relative;
   display: block;
   text-decoration: none;
   background: var(--surface);

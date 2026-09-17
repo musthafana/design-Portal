@@ -17,6 +17,28 @@ interface RailProps {
 export default function Rail({ counts, status }: RailProps) {
   const pathname = usePathname();
   const [notesCount, setNotesCount] = useState<number | null>(null);
+  const [favCount, setFavCount] = useState<number | null>(null);
+
+  // Hydrate counts dynamically on the client
+  useEffect(() => {
+    const updateFavCount = () => {
+      try {
+        const stored = localStorage.getItem('desk_favorites');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          setFavCount(Array.isArray(parsed) ? parsed.length : 0);
+        } else {
+          setFavCount(0);
+        }
+      } catch {
+        setFavCount(0);
+      }
+    };
+    
+    updateFavCount();
+    window.addEventListener('desk_favorites_changed', updateFavCount);
+    return () => window.removeEventListener('desk_favorites_changed', updateFavCount);
+  }, []);
 
   // Hydrate notes count dynamically on the client
   useEffect(() => {
@@ -74,7 +96,8 @@ export default function Rail({ counts, status }: RailProps) {
     },
     {
       label: 'MINE',
-      items: [{ name: 'Notes', path: '/notes', count: notesCount }],
+      items: [{ name: 'Favorites', path: '/favorites', count: favCount },
+        { name: 'Notes', path: '/notes', count: notesCount }],
     },
   ];
 

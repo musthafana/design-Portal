@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Drawer, Button, Tag, Space, Typography } from 'antd';
 import { motion, AnimatePresence } from 'framer-motion';
 import styles from './Books.module.css';
+import FavoriteButton from './FavoriteButton';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -69,10 +70,20 @@ export default function BooksClient({ books }: { books: any[] }) {
               viewport={{ once: true, margin: "-20px" }}
               exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.1 } }}
               key={book.id} 
-              className={styles.bookCard} 
+              className={`${styles.bookCard} has-favorite`} 
               onClick={() => setSelectedBook(book)}
             >
               <div className={styles.coverWrapper}>
+                <FavoriteButton 
+                  item={{ 
+                    id: book.id, 
+                    type: 'book', 
+                    title: book.title, 
+                    subtitle: book.author, 
+                    image: book.coverUrl, 
+                    metadata: book 
+                  }} 
+                />
                 {book.coverUrl ? (
                   <img src={book.coverUrl} alt={book.title} className={styles.coverImage} loading="lazy" />
                 ) : (
