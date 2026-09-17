@@ -54,11 +54,14 @@ export default function PeopleClient({ people }: { people: any[] }) {
               </Paragraph>
             </div>
 
-            {selectedPerson.url && (
-              <Button type="default" href={selectedPerson.url} target="_blank" style={{ marginTop: '1rem', background: 'transparent', borderColor: 'var(--line)', color: 'var(--paper2)' }}>
-                Visit Website ↗
-              </Button>
-            )}
+                        <Button 
+              type="default" 
+              href={selectedPerson.url || `https://www.google.com/search?q=${encodeURIComponent(selectedPerson.name + ' ' + selectedPerson.role)}`} 
+              target="_blank" 
+              style={{ marginTop: '1rem', background: 'transparent', borderColor: 'var(--line)', color: 'var(--paper2)' }}
+            >
+              {selectedPerson.url ? 'Visit Website ↗' : 'Search Online ↗'}
+            </Button>
 
             {/* People <-> Books Cross-link */}
             {selectedPerson.books && selectedPerson.books.length > 0 && (
