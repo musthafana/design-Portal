@@ -118,3 +118,14 @@
 .archiveBtn:hover {
   color: var(--ember);
 }
+
+.actions {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.favBtnOverride {
+  position: static !important;
+  margin-top: 4px;
+}

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import Thumbnail from './Thumbnail';
+import FavoriteButton from './FavoriteButton';
 import styles from './StoryRow.module.css';
 
 dayjs.extend(relativeTime);
@@ -27,7 +28,7 @@ export default function StoryRow({ story, onArchive, onRead, isArchived, isRead 
       whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, margin: "-20px" }}
       exit={{ opacity: 0, scale: 0.95, transition: { duration: 0.1 } }}
-      className={`${styles.row} ${isRead ? styles.read : ''}`}
+      className={`${styles.row} ${isRead ? styles.read : ''} has-favorite`}
       onClick={() => onRead(story.id)}
     >
       <div className={`${styles.importanceBar} ${styles[story.importance]}`} />
@@ -59,7 +60,9 @@ export default function StoryRow({ story, onArchive, onRead, isArchived, isRead 
         )}
       </div>
 
-      <button
+      <div className={styles.actions}>
+        <FavoriteButton item={{ id: story.id, type: 'article', title: story.title, subtitle: story.sourceName, url: story.url, metadata: story }} className={styles.favBtnOverride} />
+        <button
         onClick={(e) => {
           e.stopPropagation();
           onArchive(story.id);
@@ -70,6 +73,7 @@ export default function StoryRow({ story, onArchive, onRead, isArchived, isRead 
       >
         ⌫
       </button>
+      </div>
     </motion.div>
   );
 }
