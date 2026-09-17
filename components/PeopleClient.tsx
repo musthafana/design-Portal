@@ -24,6 +24,8 @@ export default function PeopleClient({ people }: { people: any[] }) {
             <FavoriteButton item={{ id: person.id, type: 'people', title: person.name, subtitle: person.role, url: person.url, metadata: person }} />
             <h3 className={styles.name}>{person.name}</h3>
             <p className={styles.role}>{person.role}</p>
+            {person.why && <p className={styles.description}>{person.why}</p>}
+            <span className={styles.viewMore}>View details &rarr;</span>
           </div>
         ))}
       </div>
@@ -48,7 +50,7 @@ export default function PeopleClient({ people }: { people: any[] }) {
             <div className={styles.section}>
               <div className={styles.sectionTitle}>WHY IT MATTERS</div>
               <Paragraph style={{ fontSize: '15px', lineHeight: 1.6, color: 'var(--paper)' }}>
-                {selectedPerson.whyItMatters}
+                {selectedPerson.why || selectedPerson.whyItMatters}
               </Paragraph>
             </div>
 
