@@ -1,118 +1,125 @@
-.gallery {
+.bentoContainer {
   position: absolute;
-  right: -5%;
-  top: -20vh;
-  bottom: -20vh;
-  width: 50vw;
+  right: 4rem;
+  top: 10vh;
+  bottom: 12vh;
+  width: 45vw;
+  z-index: 5;
   display: flex;
-  gap: 1.5rem;
-  transform: rotate(8deg);
-  z-index: 2; /* behind text but above bg */
-  pointer-events: none; /* The wrapper shouldn't block clicks */
-  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  align-items: center;
+  pointer-events: none;
 }
 
-.track {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  pointer-events: auto; /* enable clicks on the tracks themselves */
-}
-
-.scroller {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.25rem;
   width: 100%;
-  animation: scrollVert var(--duration) linear infinite;
-  animation-direction: var(--direction);
+  height: 100%;
+  pointer-events: auto;
 }
 
-.track:hover .scroller {
-  animation-play-state: paused;
+/* Card classes for Bento Layout */
+.horizontal {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
 }
 
-@keyframes scrollVert {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50%); }
+.vertical {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.square1 {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+.square2 {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
 }
 
 .card {
   position: relative;
-  width: 100%;
-  aspect-ratio: 3/4;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 6px;
+  border-radius: 12px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   cursor: pointer;
   text-decoration: none;
-  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.4s ease;
-  flex-shrink: 0;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .card:hover {
   transform: translateY(-4px) scale(1.02);
-  border-color: rgba(255, 255, 255, 0.15);
-  z-index: 2;
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  z-index: 10;
 }
 
 .imageWrapper {
-  position: relative;
-  flex: 1;
+  position: absolute;
+  inset: 0;
   width: 100%;
+  height: 100%;
   overflow: hidden;
+  z-index: 0;
 }
 
 .image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
-  filter: grayscale(80%) contrast(1.2);
+  transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+  filter: grayscale(40%) contrast(1.1);
 }
 
 .card:hover .image {
-  transform: scale(1.05);
-  filter: grayscale(0%) contrast(1);
+  transform: scale(1.08);
+  filter: grayscale(0%) contrast(1.1);
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, transparent 40%, rgba(10, 15, 13, 1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 40%, rgba(10, 15, 13, 0.95) 100%);
   z-index: 1;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover .overlay {
+  opacity: 0.8;
 }
 
 .tagBadge {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 16px;
+  left: 16px;
   z-index: 2;
   background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   color: var(--brass);
   font-family: var(--font-data);
   font-size: 10px;
   letter-spacing: 0.1em;
-  padding: 0.25rem 0.5rem;
-  border-radius: 4px;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
 }
 
 .content {
-  padding: 1rem 1.25rem;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  padding: 1.5rem;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -121,10 +128,11 @@
 
 .title {
   font-family: var(--font-text);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: var(--paper);
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.35rem 0;
+  line-height: 1.3;
 }
 
 .by {
@@ -143,6 +151,7 @@
   transition: box-shadow 0.4s ease;
   pointer-events: none;
   z-index: 3;
+  border-radius: 12px;
 }
 
 .card:hover .glow {
@@ -150,16 +159,14 @@
 }
 
 @media (max-width: 1024px) {
-  .gallery {
-    opacity: 0.3;
+  .bentoContainer {
     width: 60vw;
+    right: 2rem;
   }
 }
 
 @media (max-width: 768px) {
-  .gallery {
-    opacity: 0.15;
-    width: 100vw;
-    right: -20%;
+  .bentoContainer {
+    display: none;
   }
 }
