@@ -27,6 +27,7 @@ function getCSSVar(name: string, fallback: string) {
 }
 
 import AuroraBackground from '@/components/AuroraBackground';
+import LiveMarquee from '@/components/LiveMarquee';
 
 export default function LandingSequence() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -101,6 +102,8 @@ export default function LandingSequence() {
             An archive of craft. Where modern makers map their references and trace their steps into the unknown.
           </p>
         </section>
+
+        <LiveMarquee />
 
         <section className={styles.index}>
           <div className={styles.indexHeader}>
