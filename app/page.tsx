@@ -27,7 +27,7 @@ function getCSSVar(name: string, fallback: string) {
 }
 
 import AuroraBackground from '@/components/AuroraBackground';
-import LiveMarquee from '@/components/LiveMarquee';
+import HeroGallery from '@/components/HeroGallery';
 
 export default function LandingSequence() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -92,18 +92,21 @@ export default function LandingSequence() {
 
       <main className={styles.main} ref={containerRef}>
         <section className={styles.hero}>
-          <div style={{ perspective: '1200px' }}>
-            <h1 className={styles.heroTitle}>
-              <div style={{ overflow: 'hidden', paddingBottom: '1rem' }}>{splitText('DESIGN')}</div>
-              <div className={styles.italic} style={{ overflow: 'hidden', paddingBottom: '1rem' }}>{splitText('PORTAL')}</div>
-            </h1>
+          <HeroGallery />
+          <div className={styles.heroText}>
+            <div style={{ perspective: '1200px' }}>
+              <h1 className={styles.heroTitle}>
+                <div style={{ overflow: 'hidden', paddingBottom: '1rem' }}>{splitText('DESIGN')}</div>
+                <div className={styles.italic} style={{ overflow: 'hidden', paddingBottom: '1rem' }}>{splitText('PORTAL')}</div>
+              </h1>
+            </div>
+            <p className={`hero-sub ${styles.heroSub}`}>
+              An archive of craft. Where modern makers map their references and trace their steps into the unknown.
+            </p>
           </div>
-          <p className={`hero-sub ${styles.heroSub}`}>
-            An archive of craft. Where modern makers map their references and trace their steps into the unknown.
-          </p>
         </section>
 
-        <LiveMarquee />
+        
 
         <section className={styles.index}>
           <div className={styles.indexHeader}>

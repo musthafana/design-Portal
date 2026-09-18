@@ -36,6 +36,17 @@
   justify-content: flex-end;
   padding: 4rem;
   padding-bottom: 8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroText {
+  position: relative;
+  z-index: 10;
+  pointer-events: none; /* Let clicks pass through empty areas to gallery */
+}
+.heroText * {
+  pointer-events: auto; /* Re-enable clicks on text if needed */
 }
 
 .heroTitle {

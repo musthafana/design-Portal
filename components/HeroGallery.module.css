@@ -1,79 +1,32 @@
-.container {
-  padding: 6rem 0;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: 10;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  background: radial-gradient(ellipse at center, rgba(20, 25, 22, 0.4) 0%, transparent 70%);
-}
-
-.header {
-  max-width: 1560px;
-  margin: 0 auto 3rem auto;
-  padding: 0 4rem;
+.gallery {
+  position: absolute;
+  right: -5%;
+  top: -20vh;
+  bottom: -20vh;
+  width: 50vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.sectionTitle {
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--paper);
-  margin: 0;
-}
-
-.liveIndicator {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-data);
-  font-size: 11px;
-  letter-spacing: 0.1em;
-  color: var(--muted);
-  background: rgba(0, 0, 0, 0.3);
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: var(--brass);
-  box-shadow: 0 0 8px var(--brass);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { opacity: 0.4; }
-  50% { opacity: 1; }
-  100% { opacity: 0.4; }
-}
-
-.marqueeWrapper {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
   gap: 1.5rem;
+  transform: rotate(8deg);
+  z-index: 2; /* behind text but above bg */
+  pointer-events: none; /* The wrapper shouldn't block clicks */
+  mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
 }
 
 .track {
-  width: 100%;
-  overflow: hidden;
+  flex: 1;
   display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  pointer-events: auto; /* enable clicks on the tracks themselves */
 }
 
 .scroller {
   display: flex;
+  flex-direction: column;
   gap: 1.5rem;
-  width: max-content;
-  animation: scroll var(--duration) linear infinite;
+  width: 100%;
+  animation: scrollVert var(--duration) linear infinite;
   animation-direction: var(--direction);
 }
 
@@ -81,19 +34,15 @@
   animation-play-state: paused;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+@keyframes scrollVert {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
 }
 
 .card {
   position: relative;
-  width: 320px;
-  height: 240px;
+  width: 100%;
+  aspect-ratio: 3/4;
   background: rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -103,6 +52,7 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  text-decoration: none;
   transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.4s ease;
   flex-shrink: 0;
 }
@@ -115,7 +65,7 @@
 
 .imageWrapper {
   position: relative;
-  height: 160px;
+  flex: 1;
   width: 100%;
   overflow: hidden;
 }
@@ -159,24 +109,22 @@
 
 .content {
   padding: 1rem 1.25rem;
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex-grow: 1;
-  background: var(--surface);
+  justify-content: flex-end;
 }
 
 .title {
   font-family: var(--font-text);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: var(--paper);
   margin: 0 0 0.25rem 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .by {
@@ -201,24 +149,17 @@
   box-shadow: inset 0 0 0 1px var(--brass-dim);
 }
 
-.fadeLeft {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 15%;
-  background: linear-gradient(to right, rgba(10, 15, 13, 1) 0%, transparent 100%);
-  pointer-events: none;
-  z-index: 5;
+@media (max-width: 1024px) {
+  .gallery {
+    opacity: 0.3;
+    width: 60vw;
+  }
 }
 
-.fadeRight {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 15%;
-  background: linear-gradient(to left, rgba(10, 15, 13, 1) 0%, transparent 100%);
-  pointer-events: none;
-  z-index: 5;
+@media (max-width: 768px) {
+  .gallery {
+    opacity: 0.15;
+    width: 100vw;
+    right: -20%;
+  }
 }
