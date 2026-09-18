@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 50px;
+  height: 72px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(10, 15, 13, 0.6);
   backdrop-filter: blur(12px);
@@ -16,10 +16,10 @@
 
 .rightBarWrapper {
   position: absolute;
-  top: 50px; /* start exactly below the top bar */
+  top: 72px; /* start exactly below the top bar */
   right: 0;
   bottom: 0;
-  width: 50px;
+  width: 72px;
   border-left: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(10, 15, 13, 0.6);
   backdrop-filter: blur(12px);
@@ -28,16 +28,11 @@
   overflow: hidden;
 }
 
-/* 
-  To make text flow top-to-bottom but face horizontally,
-  we build a very wide horizontal container, place it at the top-left corner
-  of the wrapper, and rotate it 90 degrees clockwise around that corner.
-*/
 .rightBarRotator {
   position: absolute;
   top: 0;
   left: 100%; /* Placed exactly at the right edge of the wrapper */
-  height: 50px;
+  height: 72px;
   transform-origin: top left;
   transform: rotate(90deg);
   display: flex;
@@ -51,12 +46,6 @@
   width: max-content;
   animation: marquee 60s linear infinite;
 }
-
-/* 
-  Since the right bar is just a rotated horizontal bar, 
-  translateX(-50%) moves it 'left' along its own axis, 
-  which visually means 'down' on the screen!
-*/
 
 .scrollHorizontal:hover,
 .scrollVertical:hover {
@@ -85,6 +74,21 @@
 
 .link:hover {
   opacity: 0.6;
+}
+
+.thumbnail {
+  width: 44px;
+  height: 44px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  filter: grayscale(80%);
+  transition: filter 0.3s ease;
+}
+
+.link:hover .thumbnail {
+  filter: grayscale(0%);
 }
 
 .tag {
