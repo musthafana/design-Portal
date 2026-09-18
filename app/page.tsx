@@ -27,7 +27,7 @@ function getCSSVar(name: string, fallback: string) {
 }
 
 import AuroraBackground from '@/components/AuroraBackground';
-import HeroGallery from '@/components/HeroGallery';
+import HeroFrames from '@/components/HeroFrames';
 
 export default function LandingSequence() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -92,7 +92,7 @@ export default function LandingSequence() {
 
       <main className={styles.main} ref={containerRef}>
         <section className={styles.hero}>
-          <HeroGallery />
+          <HeroFrames />
           <div className={styles.heroText}>
             <div style={{ perspective: '1200px' }}>
               <h1 className={styles.heroTitle}>
